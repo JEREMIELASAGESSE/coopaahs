@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Nos Actions{% endblock %}
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('styles/index.css') }}">
+{% endblock %}
+
+{% block body %}
+<div class="home-page__background">
+        <img src="{{ asset('images/font7.jpg') }}" alt="Image de fond" class="home-page__image">
+    </div>
+    <section class="propos-page">
+      <div class="equipes">
+        <div class="cart-produit">
+            <img src="{{ asset('images/font6.jpg') }}" alt="Produit 1" class="produit-image">
+            <div class="produit-details">
+               <h2>type d'action</h2>
+               <p>
+                <span class="localite">Localité cible</span><br>
+                <span class="description">Description de l'action</span><br>
+                <span class="description">Date de l'action</span><br>
+
+               </p>
+            </div>
+        </div>
+      </div>
+      <div class="equipes">
+        <div class="cart-produit">
+            <img src="{{ asset('images/font8.jpg') }}" alt="Produit 1" class="produit-image">
+            <div class="produit-details">
+               <h2>type d'action</h2>
+               <p>
+                <span class="localite">Localité cible</span><br>
+                <span class="description">Description de l'action</span><br>
+                <span class="description">Date de l'action</span><br>
+
+               </p>
+            </div>
+        </div>
+      </div>
+    </section>
+{% endblock %}

@@ -1,0 +1,72 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil{% endblock %}
+{% block stylesheets %}
+<link rel="stylesheet" href="{{ asset('styles/index.css') }}">
+{% endblock %}
+
+{% block body %}
+<div class="home-page__background">
+        <img src="{{ asset('images/font1.jpg') }}" alt="Image de fond" class="home-page__image">
+    </div>
+<section class="home-page">
+    <h1>
+        Bienvenue sur le site de la
+        <br>
+        <strong>Société Coopérative Agricole Anitché du Haut Sassandra</strong>
+        <br>
+        <strong>Avec Conseil D’Administration (COOP-CA COOPAAHS)</strong>
+    </h1>
+</section>
+<section class="home-page1">
+    <h2>Notre Mission</h2>
+    <p>
+       commercialiser du cacao de qualité de nos membres à des meilleurs prix 
+       pour améliorer le cadre de vie de la communauté.
+    </p>
+   <p>
+      La  Société Coopérative Agricole Anitché du Haut Sassandra (COOPAAHS) a été Créée  en 2014 à la suite d’une assemblée générale constitutive tenue par 1 076 producteurs venant de 11 localités.  
+      Elle compte à ce jour 3500 producteurs dont 2500 membres repartis dans 30 localités avec 10685 Ha de cacaoyère. 1087 de ces membres sont également certifiés Rainforest Alliance (RA).
+    </p>
+    <p>
+ 	Pour le respect de ses membres la COOPAAHS dit non à toute forme de discrimination.
+    </p>
+</section>
+<section class="home-page2">
+    <div class="home-page2__content">
+        <img src="{{ asset('images/font2.jpg') }}" alt="Nos Valeurs" class="home-page2__image">
+         <br>
+        <a href="{{ path('app_produit') }}" class="home-page2__link">Nos Produits</a>
+    </div>
+    <div class="home-page2__content">
+        <img src="{{ asset('images/font4.jpg') }}" alt="Nos Valeurs" class="home-page2__image">
+         <br>
+        <a href="{{ path('app_propos') }}" class="home-page2__link">Nos Actualités</a>
+    </div>
+    <div class="home-page2__content">
+        <img src="{{ asset('images/font3.jpg') }}" alt="Nos Valeurs" class="home-page2__image">
+         <br>
+        <a href="{{ path('app_producteur') }}" class="home-page2__link">Nos Producteurs</a>
+    </div>
+    <div class="home-page2__content">
+        <img src="{{ asset('images/font5.jpg') }}" alt="Nos Valeurs" class="home-page2__image">
+         <br>
+        <a href="{{ path('app_actualite') }}" class="home-page2__link">Nos Actions</a>
+    </div>
+</section>
+<section class="home-page3">
+    <h2>Nos Valeurs</h2>
+    <p>
+        La COOPAAHS est une coopérative qui se veut être un modèle de gouvernance, de transparence et de responsabilité sociale. 
+        Elle s’engage à respecter les principes coopératifs et à promouvoir le développement durable dans toutes ses actions.
+    </p>
+    <p>
+        La COOPAAHS est engagée dans la lutte contre le travail des enfants et la déforestation. 
+        Elle œuvre pour l’amélioration des conditions de vie de ses membres et de la communauté.
+    </p>
+    <p>
+        La COOPAAHS est une coopérative qui se veut être un modèle de gouvernance, de transparence et de responsabilité sociale. 
+        Elle s’engage à respecter les principes coopératifs et à promouvoir le développement durable dans toutes ses actions.
+    </p>
+</section>
+{% endblock %}

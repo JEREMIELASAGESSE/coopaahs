@@ -1,0 +1,24 @@
+
+<nav class="menu">
+ <img src="{{ asset('images/logo.png') }}" alt="Logo" class="logo">
+  <ul>
+    <li class="{% if app.request.attributes.get('_route') == 'app_home_page' %}active{% endif %}">
+      <a href="{{ path('app_home_page') }}">Accueil</a>
+    </li>
+    <li class="{% if app.request.attributes.get('_route') == 'app_produit' %}active{% endif %}">
+      <a href="{{ path('app_produit') }}">Produits</a>
+    </li>
+     <li class="{% if app.request.attributes.get('_route') == 'app_producteur' %}active{% endif %}">
+      <a href="{{ path('app_producteur') }}">Producteurs</a>
+    </li>
+     <li class="{% if app.request.attributes.get('_route') == 'app_actualite' %}active{% endif %}">
+      <a href="{{ path('app_actualite') }}">Nos Actions</a>
+    </li>
+     <li class="{% if app.request.attributes.get('_route') == 'app_propos' %}active{% endif %}">
+      <a href="{{ path('app_propos') }}">A Propos</a>
+    </li>
+     <li class="{% if app.request.attributes.get('_route') == 'app_contact' %}active{% endif %}">
+      <a href="{{ path('app_contact') }}">Contact</a>
+    </li>
+  </ul>
+</nav>

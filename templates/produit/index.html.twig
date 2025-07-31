@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Nos Produits{% endblock %}
+{% block stylesheets %}
+<link rel="stylesheet" href="{{ asset('styles/index.css') }}">
+{% endblock %}
+
+{% block body %}
+    <div class="home-page__background">
+        <img src="{{ asset('images/font2.jpg') }}" alt="Image de fond" class="home-page__image" class="produit-image">
+    </div>
+    <section class="propos-page">
+      <div class="equipes">
+        <div class="cart-produit">
+            <img src="{{ asset('images/font1.jpg') }}" alt="Produit 1" class="produit-image">
+            <div class="produit-details">
+               <h2>Beurre de Cacao</h2>
+               <p>
+                 Notre beurre de cacao est fabriqué à partir des fèves de cacao les plus fines, 
+                 offrant une qualité exceptionnelle pour vos produits cosmétiques et culinaires.
+               </p>
+            </div>
+        </div>
+      </div>
+    </section>
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Nos Producteurs{% endblock %}
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('styles/index.css') }}">
+{% endblock %}
+
+{% block body %}
+ <div class="home-page__background">
+        <img src="{{ asset('images/font4.jpg') }}" alt="Image de fond" class="home-page__image" class="produit-image">
+    </div>
+    <section class="propos-page">
+      <div class="equipes">
+        <div class="cart-produit">
+            <img src="{{ asset('images/font3.jpg') }}" alt="Produit 1" class="produit-image">
+            <div class="produit-details">
+               <h2>Nom complet</h2>
+               <p>
+                <span class="localite">Localité</span><br>
+                <span class="description">Description du producteur</span><br>
+               </p>
+            </div>
+        </div>
+      </div>
+    </section>
+{% endblock %}

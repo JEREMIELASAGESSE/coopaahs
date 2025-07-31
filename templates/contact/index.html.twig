@@ -1,0 +1,120 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Contact{% endblock %}
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('styles/index.css') }}">
+{% endblock %}
+
+{% block body %}
+<div class="contact">
+    <h1 class="titre">Contactez-nous</h1>
+    <section class="partie1">
+      <div class="email_telephone_whatssap">
+        <p>
+          <strong><img src="{{asset("images/mail.png")}}" alt="ddd" class="logo" />:</strong>
+          <a href="mailto:ndrikouamejeremie@gmail.com"> Email</a>
+        </p>
+        <p>
+          <strong><img src="{{asset("images/phone.png")}}" alt="ddd" class="logo" />:</strong>
+          <a href="tel:+2250769373509">0769373509</a>
+        </p>
+        <p>
+          <strong><img src="{{asset("images/whatsapp.png")}}" alt="ddd" class="logo" /> :</strong>
+          <a
+            href="https://wa.me/2250500429932?text=Bonjour%20KOUAME,%20je%20viens%20du%20site%20et%20j’ai%20une%20question
+"
+          >
+            WhatsApp</a
+          >
+        </p>
+        <p>
+          <strong><img src="{{asset("images/facebook.png")}}" alt="ddd" class="logo" /> :</strong>
+          <a href="https://www.facebook.com/geremi.ndri">Facebook</a>
+        </p>
+        <div class="text">
+            <p>
+                Nous serons ravis de vous entendre et de répondre à vos questions. N'hésitez pas à nous
+                 contacter pour toute information ou assistance. Notre équipe est là pour vous aider.
+            </p>
+          
+        </div>
+      </div>
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.123456789012!2d-122.419415684681!3d37.774929279759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c8e8e8e8e%3A0x8e8e8e8e8e8e8e8e!2sEglise%20Exemple!5e0!3m2!1sfr!2sfr!4v1616161616161"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+    </section>
+      <h1>Formulaire de contact</h1>
+    <section id="contact">
+      <div class="form">
+        <form action="">
+          <input type="text" placeholder="votre nom " required />
+          <input type="email" placeholder="votre e-mail " required />
+          <input type="text" placeholder="l'objet " required />
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="votre message"
+            required
+          ></textarea>
+          <button type="submit" class="infobtn">Envoyer</button>
+        </form>
+      </div>
+      <div class="membre">
+        <h1>Nos responsables</h1>
+        <div class="perso">
+          <img src="{{asset("images/logo.png")}}" alt="ddd" class="logo" />
+          <ul>
+            <li>
+              <b> nom</b>
+            </li>
+            <li>fonction</li>
+            <li>tel:+2250787967548</li>
+            <li>E-mail: jeremie@gmail.com</li>
+          </ul>
+        </div>
+        <div class="perso">
+          <img src="{{asset("images/logo.png")}}" alt="ddd" class="logo" />
+          <ul>
+            <li>
+              <b>Nom</b>
+            </li>
+            <li>fonction</li>
+            <li>tel:+2550709518819</li>
+            <li>E-mail: mathe@gmail.com</li>
+          </ul>
+        </div>
+        <div class="perso">
+           <img src="{{asset("images/logo.png")}}" alt="ddd" class="logo" />
+          <ul>
+            <li>
+              <b>nom</b>
+            </li>
+            <li>fonction</li>
+            <li>tel:+2550500429932</li>
+            <li>E-mail: xavier@gmail.com</li>
+          </ul>
+        </div>
+        <div class="perso">
+           <img src="{{asset("images/logo.png")}}" alt="ddd" class="logo" />
+          <ul>
+            <li>
+              <b>Nom</b>
+            </li>
+            <li>fonction</li>
+            <li>tel:+2550500429932</li>
+            <li>E-mail: jeremie@gmail.com</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
+{% endblock %}
